@@ -42,7 +42,7 @@ N 940 -190 940 -140 {
 lab=4f}
 N 940 -140 980 -140 {
 lab=4f}
-N 1040 -90 1040 -70 {
+N 1200 -90 1200 -70 {
 lab=GND}
 N 1260 -140 1280 -140 {
 lab=OUT}
@@ -80,8 +80,8 @@ C {lf.sym} 520 -250 0 0 {name=x5}
 C {ctrlsel.sym} 680 -240 0 0 {name=x7}
 C {devices/gnd.sym} 680 -180 0 0 {name=l2 lab=GND}
 C {devices/gnd.sym} 600 -210 0 0 {name=l3 lab=GND}
-C {sw.sym} 1040 -130 0 0 {name=x8}
-C {inv.sym} 1140 -140 0 0 {name=x9}
-C {inv.sym} 1220 -140 0 0 {name=x10}
-C {devices/gnd.sym} 1040 -70 0 0 {name=l4 lab=GND}
+C {sw.sym} 1200 -130 0 0 {name=x8}
+C {inv.sym} 1020 -140 0 0 {name=x9}
+C {inv.sym} 1100 -140 0 0 {name=x10}
+C {devices/gnd.sym} 1200 -70 0 0 {name=l4 lab=GND}
 C {devices/opin.sym} 1280 -140 0 0 {name=p1 lab=OUT}
