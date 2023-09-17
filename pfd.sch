@@ -5,11 +5,10 @@ K {}
 V {}
 S {}
 E {}
-T {RESET is active low} 200 -270 0 0 0.4 0.4 {}
-T {RESET is active low} 200 -110 0 0 0.4 0.4 {}
-N 90 -70 130 -70 {
+T {RESET is active low} 120 -205 0 0 0.4 0.4 {}
+N 30 -50 70 -50 {
 lab=DATA}
-N 90 -290 130 -290 {
+N 30 -310 70 -310 {
 lab=CLK}
 N 470 -310 470 -200 {
 lab=UP}
@@ -27,20 +26,26 @@ N 250 -310 410 -310 {
 lab=UP}
 N 250 -50 410 -50 {
 lab=DOWN}
-N 270 -180 350 -180 {
+N 20 -70 70 -70 {
+lab=VDD}
+N 20 -290 20 -70 {
+lab=VDD}
+N 20 -290 70 -290 {
+lab=VDD}
+N 70 -100 70 -90 {
 lab=#net1}
-N 270 -240 270 -180 {
-lab=#net1}
-N 270 -260 270 -240 {
-lab=#net1}
-N 190 -260 270 -260 {
-lab=#net1}
-C {devices/ipin.sym} 90 -70 0 0 {name=p1 lab=DATA}
-C {devices/ipin.sym} 90 -290 0 0 {name=p2 lab=CLK}
+N 70 -180 350 -180 {
+lab=#net2}
+N 70 -270 70 -180 {
+lab=#net2}
+N 10 -200 20 -200 {
+lab=VDD}
+C {devices/ipin.sym} 30 -50 0 0 {name=p1 lab=DATA}
+C {devices/ipin.sym} 30 -310 0 0 {name=p2 lab=CLK}
 C {devices/opin.sym} 520 -310 0 0 {name=p3 lab=UP}
 C {devices/opin.sym} 530 -50 0 0 {name=p4 lab=DOWN}
-C {dff_pfd.sym} 190 -300 0 0 {name=x1}
-C {dff_pfd.sym} 190 -60 2 1 {name=x2}
-C {nand2.sym} 410 -180 0 1 {name=x3}
-C {inv.sym} 190 -220 1 0 {name=x4}
-C {inv.sym} 190 -140 1 0 {name=x5}
+C {nand2_1.sym} 410 -180 0 1 {name=x3 VDD=VDD VNW=VDD VPW=0 VSS=0 prefix=gf180mcu_fd_sc_mcu7t5v0__ }
+C {dffrnq_1.sym} 160 -290 0 0 {name=x1 VDD=VDD VNW=VDD VPW=0 VSS=0 prefix=gf180mcu_fd_sc_mcu7t5v0__ }
+C {dffrnq_1.sym} 160 -70 2 1 {name=x2 VDD=VDD VNW=VDD VPW=0 VSS=0 prefix=gf180mcu_fd_sc_mcu7t5v0__ }
+C {clkbuf_1.sym} 70 -140 1 0 {name=x4 VDD=VDD VNW=VDD VPW=0 VSS=0 prefix=gf180mcu_fd_sc_mcu7t5v0__ }
+C {devices/vdd.sym} 10 -200 0 0 {name=l1 lab=VDD}

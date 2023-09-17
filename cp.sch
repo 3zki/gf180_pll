@@ -145,7 +145,6 @@ sa=0 sb=0 sd=0
 model=nfet_06v0
 spiceprefix=X
 }
-C {inv.sym} 520 -350 0 1 {name=x4}
 C {devices/lab_wire.sym} 220 -430 0 1 {name=p9 sig_type=std_logic lab=vbp}
 C {devices/lab_wire.sym} 220 -130 0 1 {name=p12 sig_type=std_logic lab=vbn}
 C {symbols/pfet_06v0.sym} 100 -430 0 1 {name=M1
@@ -249,3 +248,4 @@ model=pfet_06v0
 spiceprefix=X
 }
 C {devices/ipin.sym} 500 -250 0 1 {name=p13 lab=DOWN}
+C {inv_1.sym} 520 -350 0 1 {name=x1 VDD=VDD VNW=VDD VPW=0 VSS=0 prefix=gf180mcu_fd_sc_mcu7t5v0__ }

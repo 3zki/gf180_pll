@@ -5,93 +5,64 @@ K {}
 V {}
 S {}
 E {}
-N 100 -70 100 -60 {
+N 440 -140 480 -140 {
+lab=2f}
+N 220 -140 260 -140 {
+lab=4f}
+N 440 -140 440 -80 {
+lab=2f}
+N 260 -120 260 -70 {
 lab=#net1}
-N 100 -70 240 -110 {
+N 260 -70 310 -70 {
 lab=#net1}
-N 240 -120 240 -110 {
-lab=#net1}
-N 220 -40 240 -40 {
+N 390 -70 440 -70 {
+lab=2f}
+N 440 -80 440 -70 {
+lab=2f}
+N 660 -140 700 -140 {
+lab=out}
+N 660 -140 660 -80 {
+lab=out}
+N 480 -120 480 -70 {
 lab=#net2}
-N 100 -100 100 -90 {
+N 480 -70 530 -70 {
 lab=#net2}
-N 100 -90 240 -50 {
-lab=#net2}
-N 240 -50 240 -40 {
-lab=#net2}
-N 240 -140 240 -120 {
-lab=#net1}
-N 220 -140 240 -140 {
-lab=#net1}
-N 360 -190 360 -180 {
+N 610 -70 660 -70 {
 lab=out}
-N 360 -190 500 -230 {
+N 660 -80 660 -70 {
 lab=out}
-N 500 -240 500 -230 {
-lab=out}
-N 480 -240 500 -240 {
-lab=out}
-N 360 -220 360 -210 {
-lab=#net3}
-N 360 -210 500 -170 {
-lab=#net3}
-N 500 -170 500 -160 {
-lab=#net3}
-N 480 -160 500 -160 {
-lab=#net3}
-N 500 -240 540 -240 {
-lab=out}
-N 500 -160 500 -0 {
-lab=#net3}
-N 100 -0 500 -0 {
-lab=#net3}
-N 100 -20 100 -0 {
-lab=#net3}
-N 240 -140 360 -140 {
-lab=#net1}
-N 100 -320 100 -310 {
-lab=#net4}
-N 100 -310 240 -270 {
-lab=#net4}
-N 240 -270 240 -260 {
-lab=#net4}
-N 220 -260 240 -260 {
-lab=#net4}
-N 100 -290 100 -280 {
-lab=#net5}
-N 100 -290 240 -330 {
-lab=#net5}
-N 240 -340 240 -330 {
-lab=#net5}
-N 220 -340 240 -340 {
-lab=#net5}
-N 240 -260 360 -260 {
-lab=#net4}
-N 100 -190 100 -180 {
-lab=#net4}
-N 100 -190 260 -250 {
-lab=#net4}
-N 260 -260 260 -250 {
-lab=#net4}
-N 80 -140 100 -140 {
+N 460 -140 460 -20 {
+lab=2f}
+N -180 -140 -160 -140 {
 lab=clk}
-N 80 -240 80 -140 {
+N -200 -140 -180 -140 {
 lab=clk}
-N 80 -240 100 -240 {
-lab=clk}
-N 60 -360 100 -360 {
-lab=#net2}
-N 60 -360 60 -100 {
-lab=#net2}
-N 60 -100 100 -100 {
-lab=#net2}
-N 40 -190 80 -190 {
-lab=clk}
-C {devices/ipin.sym} 40 -190 0 0 {name=p1 lab=clk}
-C {devices/opin.sym} 540 -240 0 0 {name=p3 lab=out}
-C {nand2.sym} 160 -340 0 0 {name=x1}
-C {nand2.sym} 160 -260 0 0 {name=x2}
-C {nand2.sym} 160 -40 0 0 {name=x3}
-C {nand3.sym} 160 -140 0 0 {name=x4}
-C {nand2.sym} 420 -240 0 0 {name=x5}
-C {nand2.sym} 420 -160 0 0 {name=x6}
+N 240 -140 240 -20 {
+lab=4f}
+N 0 -140 40 -140 {
+lab=4f}
+N 220 -140 220 -80 {
+lab=4f}
+N 40 -120 40 -70 {
+lab=#net3}
+N 40 -70 90 -70 {
+lab=#net3}
+N 170 -70 220 -70 {
+lab=4f}
+N 220 -80 220 -70 {
+lab=4f}
+N 20 -140 20 -20 {
+lab=4f}
+C {devices/ipin.sym} -200 -140 0 0 {name=p1 lab=clk}
+C {devices/opin.sym} 700 -140 0 0 {name=p3 lab=out}
+C {dffq_1.sym} 350 -130 0 0 {name=x1 VDD=VDD VNW=VDD VPW=0 VSS=0 prefix=gf180mcu_fd_sc_mcu7t5v0__ }
+C {clkinv_1.sym} 350 -70 0 1 {name=x2 VDD=VDD VNW=VDD VPW=0 VSS=0 prefix=gf180mcu_fd_sc_mcu7t5v0__ }
+C {dffq_1.sym} 570 -130 0 0 {name=x3 VDD=VDD VNW=VDD VPW=0 VSS=0 prefix=gf180mcu_fd_sc_mcu7t5v0__ }
+C {clkinv_1.sym} 570 -70 0 1 {name=x4 VDD=VDD VNW=VDD VPW=0 VSS=0 prefix=gf180mcu_fd_sc_mcu7t5v0__ }
+C {devices/opin.sym} 460 -20 0 0 {name=p2 lab=2f}
+C {clkbuf_3.sym} -120 -140 0 0 {name=x10 VDD=VDD VNW=VDD VPW=0 VSS=0 prefix=gf180mcu_fd_sc_mcu7t5v0__ }
+C {clkbuf_8.sym} -40 -140 0 0 {name=x11 VDD=VDD VNW=VDD VPW=0 VSS=0 prefix=gf180mcu_fd_sc_mcu7t5v0__ }
+C {devices/opin.sym} 240 -20 0 0 {name=p4 lab=4f}
+C {dffq_1.sym} 130 -130 0 0 {name=x5 VDD=VDD VNW=VDD VPW=0 VSS=0 prefix=gf180mcu_fd_sc_mcu7t5v0__ }
+C {clkinv_1.sym} 130 -70 0 1 {name=x6 VDD=VDD VNW=VDD VPW=0 VSS=0 prefix=gf180mcu_fd_sc_mcu7t5v0__ }
+C {devices/opin.sym} 20 -20 0 0 {name=p5 lab=8f}

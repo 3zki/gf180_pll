@@ -5,83 +5,80 @@ K {}
 V {}
 S {}
 E {}
-T {Clock dividers} 1030 -290 0 0 0.4 0.4 {}
-N 220 -250 260 -250 {
-lab=UP}
-N 220 -230 260 -230 {
-lab=DOWN}
-N 20 -230 60 -230 {
-lab=clk}
-N 20 -250 60 -250 {
+T {PFD II : more sensitive than PFD I
+LF II : lower loop bandwidth than LF I} 220 -200 0 0 0.3 0.3 {}
+T {Corner models:
+FET : ss, typical, ff, sf, fs
+RES : res_ss, res_typical, res_ff} 580 -380 0 0 0.3 0.3 {}
+N 50 -310 50 -260 {
 lab=data}
-N 1080 -250 1120 -250 {
-lab=2f}
-N 1100 -250 1100 -190 {
-lab=2f}
-N 940 -250 940 -190 {
-lab=4f}
-N 940 -250 960 -250 {
-lab=4f}
-N 420 -250 460 -250 {
+N 550 -260 570 -260 {
 lab=#net1}
-N 20 -300 20 -250 {
-lab=data}
-N 1240 -300 1240 -250 {
-lab=data}
-N 580 -250 600 -250 {
-lab=#net2}
-N 760 -250 780 -250 {
+N 730 -260 750 -260 {
 lab=ctrl}
-N 20 -300 1240 -300 {
+N 570 -240 570 -220 {
+lab=GND}
+N 650 -210 650 -190 {
+lab=GND}
+N 1050 -100 1050 -80 {
+lab=GND}
+N 410 -260 430 -260 {
+lab=#net2}
+N 230 -260 250 -260 {
+lab=UP}
+N 230 -240 250 -240 {
+lab=DOWN}
+N 50 -240 70 -240 {
+lab=clk}
+N 50 -260 70 -260 {
 lab=data}
-N 600 -230 600 -210 {
-lab=GND}
-N 680 -200 680 -180 {
-lab=GND}
-N 940 -190 940 -140 {
+N 910 -260 930 -260 {
+lab=#net3}
+N 990 -210 990 -150 {
+lab=8f}
+N 1010 -210 1010 -180 {
 lab=4f}
-N 940 -140 980 -140 {
-lab=4f}
-N 1200 -90 1200 -70 {
-lab=GND}
-N 1260 -140 1280 -140 {
-lab=OUT}
-C {cp.sym} 340 -240 0 0 {name=x2}
-C {devices/code_shown.sym} 620 -470 0 0 {name=MODELS only_toplevel=true
+N 50 -310 1090 -310 {
+lab=data}
+N 1090 -310 1090 -260 {
+lab=data}
+N 1030 -210 1030 -200 {
+lab=2f}
+C {cp.sym} 330 -250 0 0 {name=x2}
+C {devices/code_shown.sym} 560 -470 0 0 {name=MODELS only_toplevel=true
 format="tcleval( @value )"
 value="
 .include $::180MCU_MODELS/design.ngspice
+.include $::180MCU_STDCELLS/gf180mcu_fd_sc_mcu7t5v0.spice
 .lib $::180MCU_MODELS/sm141064.ngspice typical
 .lib $::180MCU_MODELS/sm141064.ngspice res_typical
 "}
-C {devices/opin.sym} 1100 -190 0 0 {name=p3 lab=2f}
-C {devices/code_shown.sym} 60 -470 0 0 {name=NGSPICE only_toplevel=true
+C {devices/opin.sym} 1010 -180 0 0 {name=p3 lab=4f}
+C {devices/code_shown.sym} 50 -470 0 0 {name=NGSPICE only_toplevel=true
 value="
 vpwr VDD 0 pulse(0 5.0 4n 1p 1p 200u 200u) dc 0
-vext clk 0 pulse(0 5.0 4n 40p 40p 31.25n 62.5n) dc 0
+vext clk 0 pulse(0 5.0 4n 40p 40p 62.5n 125n) dc 0
 .control
 save all
-tran  0.08n 20u
+tran  0.05n 25u
 write pll_bench.raw
 .endc
 "}
-C {pfd.sym} 140 -240 0 0 {name=x1}
-C {devices/lab_wire.sym} 250 -250 0 0 {name=p10 sig_type=std_logic lab=UP}
-C {devices/lab_wire.sym} 250 -230 0 0 {name=p11 sig_type=std_logic lab=DOWN}
-C {devices/lab_wire.sym} 770 -250 0 1 {name=p9 sig_type=std_logic lab=ctrl}
-C {devices/opin.sym} 940 -190 0 0 {name=p8 lab=4f}
-C {devices/lab_wire.sym} 20 -250 0 0 {name=p5 sig_type=std_logic lab=data}
-C {fdiv.sym} 1020 -250 0 0 {name=x4}
-C {fdiv.sym} 1180 -250 0 0 {name=x6}
-C {devices/ipin.sym} 20 -230 0 0 {name=p4 lab=clk}
-C {vco.sym} 860 -240 0 0 {name=x3}
+C {devices/lab_wire.sym} 240 -260 0 0 {name=p10 sig_type=std_logic lab=UP}
+C {devices/lab_wire.sym} 240 -240 0 0 {name=p11 sig_type=std_logic lab=DOWN}
+C {devices/lab_wire.sym} 740 -260 0 1 {name=p9 sig_type=std_logic lab=ctrl}
+C {devices/opin.sym} 990 -150 0 1 {name=p8 lab=8f}
+C {devices/lab_wire.sym} 50 -260 0 0 {name=p5 sig_type=std_logic lab=data}
+C {devices/ipin.sym} 50 -240 0 0 {name=p4 lab=clk}
+C {vco.sym} 830 -250 0 0 {name=x3}
 C {devices/title.sym} 160 -30 0 0 {name=l1 author="Mizuki Mori"}
-C {lf.sym} 520 -250 0 0 {name=x5}
-C {ctrlsel.sym} 680 -240 0 0 {name=x7}
-C {devices/gnd.sym} 680 -180 0 0 {name=l2 lab=GND}
-C {devices/gnd.sym} 600 -210 0 0 {name=l3 lab=GND}
-C {sw.sym} 1200 -130 0 0 {name=x8}
-C {inv.sym} 1020 -140 0 0 {name=x9}
-C {inv.sym} 1100 -140 0 0 {name=x10}
-C {devices/gnd.sym} 1200 -70 0 0 {name=l4 lab=GND}
-C {devices/opin.sym} 1280 -140 0 0 {name=p1 lab=OUT}
+C {lf.sym} 490 -260 0 0 {name=x5}
+C {ctrlsel.sym} 650 -250 0 0 {name=x7}
+C {devices/gnd.sym} 650 -190 0 0 {name=l2 lab=GND}
+C {devices/gnd.sym} 570 -220 0 0 {name=l3 lab=GND}
+C {sw.sym} 1050 -140 0 0 {name=x8}
+C {devices/gnd.sym} 1050 -80 0 0 {name=l4 lab=GND}
+C {devices/opin.sym} 1110 -150 0 0 {name=p1 lab=OUT}
+C {fdiv.sym} 1010 -240 0 0 {name=x9}
+C {pfd2.sym} 150 -250 0 0 {name=x1}
+C {devices/opin.sym} 1030 -200 0 0 {name=p2 lab=2f}

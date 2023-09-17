@@ -1,16 +1,18 @@
 # gf180_pll
 Analog PLL testbench
 
+* input : 8MHz
+* output : 64MHz
+* VDD : 5V
+
 # Files
 * pll_bench - PLL and its benchmark
-* pfd - PFD 
-  * dff_pfd - Special DFF for PFD
+* pfd, pfd2 - PFD 
 * cp - Charge pump
-* lf - Loop filter
+* lf, lf2 - Loop filter
 * ctrlsel - Vctrl selector
+  * tmg -Transmission gate
 * vco - VCO
   * inv_bias - Special inverter for the ring oscillator
-* fdiv - Clock divider by 2
+* fdiv - Buffer and Clock divider
 * sw - Output switch
-* nand2 - 2 input NAND
-* nand3 - 3 input NAND
