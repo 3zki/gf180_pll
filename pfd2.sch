@@ -157,20 +157,20 @@ C {devices/ipin.sym} 70 -80 0 0 {name=p1 lab=DATA}
 C {devices/ipin.sym} 70 -540 0 0 {name=p2 lab=CLK}
 C {devices/opin.sym} 870 -520 0 0 {name=p3 lab=UP}
 C {devices/opin.sym} 870 -100 0 0 {name=p4 lab=DOWN}
-C {nand2_1.sym} 270 -560 0 0 {name=x1 VDD=VDD VNW=VDD VPW=0 VSS=0 prefix=gf180mcu_fd_sc_mcu7t5v0__ }
-C {clkinv_1.sym} 150 -540 0 0 {name=x7 VDD=VDD VNW=VDD VPW=0 VSS=0 prefix=gf180mcu_fd_sc_mcu7t5v0__ }
-C {nand2_1.sym} 270 -460 0 0 {name=x2 VDD=VDD VNW=VDD VPW=0 VSS=0 prefix=gf180mcu_fd_sc_mcu7t5v0__ }
-C {nand2_1.sym} 270 -360 0 0 {name=x3 VDD=VDD VNW=VDD VPW=0 VSS=0 prefix=gf180mcu_fd_sc_mcu7t5v0__ }
-C {nand2_1.sym} 270 -260 0 0 {name=x4 VDD=VDD VNW=VDD VPW=0 VSS=0 prefix=gf180mcu_fd_sc_mcu7t5v0__ }
-C {nand2_1.sym} 270 -160 0 0 {name=x5 VDD=VDD VNW=VDD VPW=0 VSS=0 prefix=gf180mcu_fd_sc_mcu7t5v0__ }
-C {nand2_1.sym} 270 -60 0 0 {name=x6 VDD=VDD VNW=VDD VPW=0 VSS=0 prefix=gf180mcu_fd_sc_mcu7t5v0__ }
-C {clkinv_1.sym} 150 -80 0 0 {name=x8 VDD=VDD VNW=VDD VPW=0 VSS=0 prefix=gf180mcu_fd_sc_mcu7t5v0__ }
-C {nand3_1.sym} 650 -520 0 0 {name=x13 VDD=VDD VNW=VDD VPW=0 VSS=0 prefix=gf180mcu_fd_sc_mcu7t5v0__ }
-C {nand3_1.sym} 650 -100 0 0 {name=x14 VDD=VDD VNW=VDD VPW=0 VSS=0 prefix=gf180mcu_fd_sc_mcu7t5v0__ }
-C {nand4_1.sym} 490 -300 0 0 {name=x15 VDD=VDD VNW=VDD VPW=0 VSS=0 prefix=gf180mcu_fd_sc_mcu7t5v0__ }
-C {clkinv_1.sym} 410 -560 0 0 {name=x9 VDD=VDD VNW=VDD VPW=0 VSS=0 prefix=gf180mcu_fd_sc_mcu7t5v0__ }
-C {clkinv_1.sym} 510 -560 0 0 {name=x10 VDD=VDD VNW=VDD VPW=0 VSS=0 prefix=gf180mcu_fd_sc_mcu7t5v0__ }
-C {clkinv_1.sym} 410 -60 0 0 {name=x11 VDD=VDD VNW=VDD VPW=0 VSS=0 prefix=gf180mcu_fd_sc_mcu7t5v0__ }
-C {clkinv_1.sym} 510 -60 0 0 {name=x12 VDD=VDD VNW=VDD VPW=0 VSS=0 prefix=gf180mcu_fd_sc_mcu7t5v0__ }
-C {clkinv_1.sym} 790 -520 0 0 {name=x16 VDD=VDD VNW=VDD VPW=0 VSS=0 prefix=gf180mcu_fd_sc_mcu7t5v0__ }
-C {clkinv_1.sym} 790 -100 0 0 {name=x17 VDD=VDD VNW=VDD VPW=0 VSS=0 prefix=gf180mcu_fd_sc_mcu7t5v0__ }
+C {nand2_1.sym} 270 -560 0 0 {name=x1 VDD=VDD VNW=VDD VPW=GND VSS=GND prefix=gf180mcu_fd_sc_mcu7t5v0__ }
+C {clkinv_1.sym} 150 -540 0 0 {name=x7 VDD=VDD VNW=VDD VPW=GND VSS=GND prefix=gf180mcu_fd_sc_mcu7t5v0__ }
+C {nand3_1.sym} 650 -520 0 0 {name=x13 VDD=VDD VNW=VDD VPW=GND VSS=GND prefix=gf180mcu_fd_sc_mcu7t5v0__ }
+C {nand3_1.sym} 650 -100 0 0 {name=x14 VDD=VDD VNW=VDD VPW=GND VSS=GND prefix=gf180mcu_fd_sc_mcu7t5v0__ }
+C {nand4_1.sym} 490 -300 0 0 {name=x15 VDD=VDD VNW=VDD VPW=GND VSS=GND prefix=gf180mcu_fd_sc_mcu7t5v0__ }
+C {nand2_1.sym} 270 -460 0 0 {name=x2 VDD=VDD VNW=VDD VPW=GND VSS=GND prefix=gf180mcu_fd_sc_mcu7t5v0__ }
+C {nand2_1.sym} 270 -360 0 0 {name=x3 VDD=VDD VNW=VDD VPW=GND VSS=GND prefix=gf180mcu_fd_sc_mcu7t5v0__ }
+C {nand2_1.sym} 270 -260 0 0 {name=x4 VDD=VDD VNW=VDD VPW=GND VSS=GND prefix=gf180mcu_fd_sc_mcu7t5v0__ }
+C {nand2_1.sym} 270 -160 0 0 {name=x5 VDD=VDD VNW=VDD VPW=GND VSS=GND prefix=gf180mcu_fd_sc_mcu7t5v0__ }
+C {nand2_1.sym} 270 -60 0 0 {name=x6 VDD=VDD VNW=VDD VPW=GND VSS=GND prefix=gf180mcu_fd_sc_mcu7t5v0__ }
+C {clkinv_1.sym} 150 -80 0 0 {name=x8 VDD=VDD VNW=VDD VPW=GND VSS=GND prefix=gf180mcu_fd_sc_mcu7t5v0__ }
+C {clkinv_1.sym} 410 -560 0 0 {name=x9 VDD=VDD VNW=VDD VPW=GND VSS=GND prefix=gf180mcu_fd_sc_mcu7t5v0__ }
+C {clkinv_1.sym} 510 -560 0 0 {name=x10 VDD=VDD VNW=VDD VPW=GND VSS=GND prefix=gf180mcu_fd_sc_mcu7t5v0__ }
+C {clkinv_1.sym} 410 -60 0 0 {name=x11 VDD=VDD VNW=VDD VPW=GND VSS=GND prefix=gf180mcu_fd_sc_mcu7t5v0__ }
+C {clkinv_1.sym} 510 -60 0 0 {name=x12 VDD=VDD VNW=VDD VPW=GND VSS=GND prefix=gf180mcu_fd_sc_mcu7t5v0__ }
+C {clkinv_1.sym} 790 -520 0 0 {name=x16 VDD=VDD VNW=VDD VPW=GND VSS=GND prefix=gf180mcu_fd_sc_mcu7t5v0__ }
+C {clkinv_1.sym} 790 -100 0 0 {name=x17 VDD=VDD VNW=VDD VPW=GND VSS=GND prefix=gf180mcu_fd_sc_mcu7t5v0__ }

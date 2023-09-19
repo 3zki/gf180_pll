@@ -42,7 +42,7 @@ lab=EX}
 C {devices/opin.sym} 320 -140 0 0 {name=p1 lab=OUT}
 C {devices/ipin.sym} 200 -190 0 0 {name=p2 lab=EX}
 C {devices/ipin.sym} 200 -90 0 0 {name=p3 lab=LF}
-C {inv_1.sym} 140 -140 0 1 {name=x1 VDD=VDD VNW=VDD VPW=0 VSS=0 prefix=gf180mcu_fd_sc_mcu7t5v0__ }
+C {inv_1.sym} 140 -140 0 1 {name=x1 VDD=VDD VNW=VDD VPW=GND VSS=GND prefix=gf180mcu_fd_sc_mcu7t5v0__ }
 C {tmg.sym} 250 -190 0 0 {name=x2}
 C {tmg.sym} 250 -90 0 0 {name=x3}
 C {devices/ipin.sym} 200 -120 0 0 {name=p4 lab=FREERUN}

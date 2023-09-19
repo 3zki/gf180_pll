@@ -18,5 +18,5 @@ lab=DIS}
 C {devices/opin.sym} 250 -70 0 0 {name=p1 lab=OUT}
 C {devices/ipin.sym} 170 -70 0 0 {name=p2 lab=IN}
 C {devices/ipin.sym} 40 -20 0 0 {name=p4 lab=DIS}
-C {inv_1.sym} 100 -20 0 0 {name=x1 VDD=VDD VNW=VDD VPW=0 VSS=0 prefix=gf180mcu_fd_sc_mcu7t5v0__ }
+C {inv_1.sym} 100 -20 0 0 {name=x1 VDD=VDD VNW=VDD VPW=GND VSS=GND prefix=gf180mcu_fd_sc_mcu7t5v0__ }
 C {tmg.sym} 210 -70 0 0 {name=x2}

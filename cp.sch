@@ -248,4 +248,4 @@ model=pfet_06v0
 spiceprefix=X
 }
 C {devices/ipin.sym} 500 -250 0 1 {name=p13 lab=DOWN}
-C {inv_1.sym} 520 -350 0 1 {name=x1 VDD=VDD VNW=VDD VPW=0 VSS=0 prefix=gf180mcu_fd_sc_mcu7t5v0__ }
+C {inv_1.sym} 520 -350 0 1 {name=x1 VDD=VDD VNW=VDD VPW=GND VSS=GND prefix=gf180mcu_fd_sc_mcu7t5v0__ }

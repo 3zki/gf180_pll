@@ -44,8 +44,8 @@ C {devices/ipin.sym} 30 -50 0 0 {name=p1 lab=DATA}
 C {devices/ipin.sym} 30 -310 0 0 {name=p2 lab=CLK}
 C {devices/opin.sym} 520 -310 0 0 {name=p3 lab=UP}
 C {devices/opin.sym} 530 -50 0 0 {name=p4 lab=DOWN}
-C {nand2_1.sym} 410 -180 0 1 {name=x3 VDD=VDD VNW=VDD VPW=0 VSS=0 prefix=gf180mcu_fd_sc_mcu7t5v0__ }
-C {dffrnq_1.sym} 160 -290 0 0 {name=x1 VDD=VDD VNW=VDD VPW=0 VSS=0 prefix=gf180mcu_fd_sc_mcu7t5v0__ }
-C {dffrnq_1.sym} 160 -70 2 1 {name=x2 VDD=VDD VNW=VDD VPW=0 VSS=0 prefix=gf180mcu_fd_sc_mcu7t5v0__ }
-C {clkbuf_1.sym} 70 -140 1 0 {name=x4 VDD=VDD VNW=VDD VPW=0 VSS=0 prefix=gf180mcu_fd_sc_mcu7t5v0__ }
+C {nand2_1.sym} 410 -180 0 1 {name=x3 VDD=VDD VNW=VDD VPW=GND VSS=GND prefix=gf180mcu_fd_sc_mcu7t5v0__ }
+C {dffrnq_1.sym} 160 -290 0 0 {name=x1 VDD=VDD VNW=VDD VPW=GND VSS=GND prefix=gf180mcu_fd_sc_mcu7t5v0__ }
+C {dffrnq_1.sym} 160 -70 2 1 {name=x2 VDD=VDD VNW=VDD VPW=GND VSS=GND prefix=gf180mcu_fd_sc_mcu7t5v0__ }
+C {clkbuf_1.sym} 70 -140 1 0 {name=x4 VDD=VDD VNW=VDD VPW=GND VSS=GND prefix=gf180mcu_fd_sc_mcu7t5v0__ }
 C {devices/vdd.sym} 10 -200 0 0 {name=l1 lab=VDD}
